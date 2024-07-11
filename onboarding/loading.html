@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading Animation</title>
+    <style>
+      .loader {
+        border: 4px solid #fff;
+        border-top: 4px solid #000;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+        position: absolute;
+        top: 80%;
+        left: 45%;
+      }
+      img {
+        margin: 85% 25%;
+        align-items: center;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./logo/Group 2.svg" alt="" />
+    <div class="loader"></div>
+  </body>
+</html>
